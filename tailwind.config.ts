@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'mono': ['JetBrains Mono', 'Fira Code', 'Monaco', 'Cascadia Code', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -51,6 +54,24 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				editor: {
+					bg: 'hsl(var(--editor-bg))',
+					line: 'hsl(var(--editor-line))',
+					selection: 'hsl(var(--editor-selection))',
+				},
+				tab: {
+					active: 'hsl(var(--tab-active))',
+					inactive: 'hsl(var(--tab-inactive))',
+				},
+				syntax: {
+					keyword: 'hsl(var(--syntax-keyword))',
+					string: 'hsl(var(--syntax-string))',
+					number: 'hsl(var(--syntax-number))',
+					comment: 'hsl(var(--syntax-comment))',
+					function: 'hsl(var(--syntax-function))',
+					tag: 'hsl(var(--syntax-tag))',
+					attribute: 'hsl(var(--syntax-attribute))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
